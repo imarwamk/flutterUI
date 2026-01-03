@@ -5,10 +5,4 @@ abstract class AppStrings {
   static const String getStarted = 'Get Started';
   static const String welcomeBack = 'Welcome back Grace!';
   static const String searchHint = 'Search';
-  static const List<String> categories = [
-    "All",
-    "Facial",
-    "Body Lotions",
-    "Hair Products",
-  ];
 }
