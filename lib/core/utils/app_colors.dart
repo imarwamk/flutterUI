@@ -9,4 +9,5 @@ abstract class AppColors {
   static const Color searchBarBg = Color(0Xfff2ebf9);
   static const Color searchBarBorder = Color(0Xffd1b6e6);
   static const Color cardBg = Color(0xFFF5F5F5);
+  static const Color circleAvatar = Color(0xFF655683);
 }

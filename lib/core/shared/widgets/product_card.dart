@@ -33,19 +33,22 @@ class ProductCard extends StatelessWidget {
           children: [
             Stack(
               children: [
-                Container(
-                  height: imageHeight ?? 190,
-                  width: double.infinity,
-                  decoration: BoxDecoration(
-                    borderRadius: BorderRadius.circular(30),
-                    color: AppColors.cardBg,
-                  ),
-                  child: ClipRRect(
-                    borderRadius: BorderRadius.circular(30),
-                    child: Image.asset(
-                      imagePath,
-                      fit: BoxFit.cover,
-                      errorBuilder: (c, o, s) => const Icon(Icons.error),
+                Hero(
+                  tag: imagePath, // << فريد لكل صورة
+                  child: Container(
+                    height: imageHeight ?? 190,
+                    width: double.infinity,
+                    decoration: BoxDecoration(
+                      borderRadius: BorderRadius.circular(30),
+                      color: AppColors.cardBg,
+                    ),
+                    child: ClipRRect(
+                      borderRadius: BorderRadius.circular(30),
+                      child: Image.asset(
+                        imagePath,
+                        fit: BoxFit.cover,
+                        errorBuilder: (c, o, s) => const Icon(Icons.error),
+                      ),
                     ),
                   ),
                 ),

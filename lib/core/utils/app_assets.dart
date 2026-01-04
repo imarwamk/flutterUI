@@ -5,4 +5,5 @@ abstract class AppAssets {
   static const String product3 = '$_basePath/pro2.png';
   static const String product4 = '$_basePath/pro3.png';
   static const String product5 = '$_basePath/pro4.png';
+  static const String background = '$_basePath/bg.png';
 }

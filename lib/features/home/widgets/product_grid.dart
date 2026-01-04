@@ -1,4 +1,5 @@
 import 'package:etc/core/shared/widgets/product_card.dart';
+import 'package:etc/features/products/views/products_details.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_staggered_grid_view/flutter_staggered_grid_view.dart';
 import '../data/home_data.dart';
@@ -23,6 +24,19 @@ class ProductGrid extends StatelessWidget {
           price: product['price'],
           offerText: product['offerText'],
           imageHeight: product['height'],
+          onTap: () {
+            Navigator.push(
+              context,
+              MaterialPageRoute(
+                builder: (context) => ProductsDetails(
+                  imagePath: product['imagePath'],
+                  title: product['title'],
+                  price: product['price'],
+                  offerText: product['offerText'],
+                ),
+              ),
+            );
+          },
         );
       },
     );
